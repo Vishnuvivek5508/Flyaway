@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin sign Up html</title>
+</head>
+<body>
+<h2>Sign Up here</h2>
+	<form action="admin-singUp.jsp" method="post">
+		
+		User Name<input type="text" name="admin_id"><br>
+		Password<input type="password" name="admin_password"><br>
+		Select Security Question
+			<select name="security_que" id="">
+				<option value="petName">What is name of your pet?</option>
+				<option value="firstMobile" selected>Your first mobile number?</option>
+				<option value="nickName">Your nick name?</option>
+				<option value="firstSchool">First school name?</option>
+			</select> <br>
+	
+	    Answer<input type="text" name="sec_que_ans"><br>
+		<br>
+		<button type="submit">Submit</button>
+		<br>
+	</form>
+
+
+</body>
+</html>

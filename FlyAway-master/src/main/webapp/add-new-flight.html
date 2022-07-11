@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>new-flight.html</title>
+</head>
+<body>
+	<h1>Add Flight</h1>
+
+	<form action="add-new-flight.jsp" method="post">
+		<fieldset>
+			<legend>Add Flight</legend>
+
+			Flight Number: <input type="text" name="flight_number" /><br /> <br /> 
+			Company:<input type="text" name="company" /><br /> <br /> 
+			<!-- From:<input type="text" name="departure" /><br /> <br />
+			To:<input type="text" name="destination" /><br /> <br /> -->
+			
+			From
+            <select name="departure" id="">
+                <option value="Bangalore">BLR - Bangalore, IN</option>
+                <option value="Mumbai" selected>BOM - Mumbai, IN </option>
+                <option value="Delhi">DEL - New Delhi, IN</option>
+                <option value="Kolkata">CCU - Kolkata, IN</option>
+                <option value="Goa">GOI - Goa, IN</option>
+                <option value="Hyderabad">HYD - Hyderabad, IN</option>
+                <option value="Chennai">MAA - Chennai, IN</option>
+            </select>
+            To
+            <select name="destination" id="" >
+                <option value="Bangalore">BLR - Bangalore, IN</option>
+                <option value="Mumbai" selected>BOM - Mumbai, IN </option>
+                <option value="Delhi">DEL - New Delhi, IN</option>
+                <option value="Kolkata">CCU - Kolkata, IN</option>
+                <option value="Goa">GOI - Goa, IN</option>
+                <option value="Hyderabad">HYD - Hyderabad, IN</option>
+                <option value="Chennai">MAA - Chennai, IN</option>
+            </select> <br />
+             <br />
+			Available Date:<input type="date" name="date" /><br /> <br />
+			Flight Time:<input type="time" name="time" /><br /> <br /> 
+			Seats:<input type="number" name="seats" /><br /> <br />
+			EC Price:<input type="number" name="ec_price" /><br /> <br />
+			BC Price:<input type="number" name="bc_price" /><br /> <br />
+	
+			<input type="submit" value="Add" />
+
+		</fieldset>
+	</form>
+
+</body>
+</html>

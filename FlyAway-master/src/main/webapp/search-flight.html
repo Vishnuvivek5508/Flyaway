@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search flight here</title>
+</head>
+<body>
+<h3>Search Flight</h3>
+	<nav>
+		<form action="search-flight.jsp" method="get">
+			<input type="radio" name="tripType" value="oneWay">One Way <input
+				type="radio" name="tripType" value="RoundTrip">Round Trip <br> <br> 
+				From
+			<select name="fromPlace" id="">
+				<option value="Bangalore">BLR - Bangalore, IN</option>
+				<option value="Mumbai" selected>BOM - Mumbai, IN</option>
+				<option value="Delhi">DEL - New Delhi, IN</option>
+				<option value="Kolkata">CCU - Kolkata, IN</option>
+				<option value="Goa">GOI - Goa, IN</option>
+				<option value="Hyderabad">HYD - Hyderabad, IN</option>
+				<option value="Chennai">MAA - Chennai, IN</option>
+			</select> To <select name="destination" id="">
+				<option value="Bangalore">BLR - Bangalore, IN</option>
+				<option value="Mumbai" selected>BOM - Mumbai, IN</option>
+				<option value="Delhi">DEL - New Delhi, IN</option>
+				<option value="Kolkata">CCU - Kolkata, IN</option>
+				<option value="Goa">GOI - Goa, IN</option>
+				<option value="Hyderabad">HYD - Hyderabad, IN</option>
+				<option value="Chennai">MAA - Chennai, IN</option>
+			</select>
+			<div><br> <br> 
+				Depart on <input type="date" name="date" id=""><br><br>  
+				Passengers <input type="number" min ="0" name="noOfPassengers" id=""><br> <br> 
+				
+			</div><br> <br> 
+			<div>
+			<input type="submit" value="search" />
+			</div>
+
+		</form>
+
+	</nav>
+
+</body>
+</html>
